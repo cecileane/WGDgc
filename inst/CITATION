@@ -1,0 +1,14 @@
+citHeader("To cite package 'WGDgc' in publications use:")
+
+citEntry(entry = "Article", 
+  author = personList(as.person("Charles-Elie Rabier"), as.person("Tram Ta"), as.person("Cécile Ané")),
+  title = "Detecting and Locating Whole Genome Duplications on a phylogeny: a probabilistic approach",
+  year = 2014, 
+  journal = "Molecular Biology and Evolution",
+  volume = "31",
+  number = "3",
+  pages = "750-762",
+  textVersion = paste("Charles-Elie Rabier, Tram Ta and Cécile Ané (2014)",
+   "Detecting and Locating Whole Genome Duplications on a phylogeny: a probabilistic approach",
+   "Molecular Biology and Evolution, 31(3):750-762")
+)

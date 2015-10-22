@@ -1,0 +1,5 @@
+#useDynLib(WGDgc)
+
+exportPattern("^[[:alpha:]]+")
+
+import(ape, phylobase, phyext)

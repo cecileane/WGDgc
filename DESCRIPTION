@@ -1,0 +1,14 @@
+Package: WGDgc
+Version: 1.2
+Date: 2015-10-22
+Title: Whole genome duplication detection using gene counts
+Authors@R: c(person("Tram", "Ta", role=c("aut"), email="tramta@stat.wisc.edu"),
+	     person("Charles-Elie Rabier", "Rabier", role="aut"),
+             person("Cécile", "Ané", role=c("aut","cre"), email="cecile.ane@wisc.edu")
+            )
+Depends: R (>= 3.0.1), phylobase, phyext, ape
+Description: Detection of whole genome duplications and triplications on phylogenies using gene count data, with estimation of background rates of gene duplication and loss and estimation of gene retention rates following whole genome duplications/triplications
+Encoding: UTF-8
+License: GPL (>= 3) | file LICENSE
+URL: http://www.stat.wisc.edu/~ane/wgd/
+NeedsCompilation: no
