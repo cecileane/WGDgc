@@ -19,15 +19,14 @@ rgenecount(nfam, tre, lambdamu, retention, geomMean=NULL, dirac=NULL,
   \item{tre}{a species tree in SIMMAP format.}
   \item{lambdamu}{vector of size 1 or 2, for the duplication rate
     (\eqn{\lambda}{lambda}) and loss rate (\eqn{\mu}{mu}).
-    A vector of size 1 sets \eqn{\lambda=\mu}{lambda=mu}.}
+    A vector of size 1 sets \eqn{\lambda}{lambda}=\eqn{\mu}{mu}.}
   \item{retention}{vector of length the number of WGD/WGT events in the
-  tree, giving the retention rate at each event. For WGTs, both extra
-  copies are assumed to be retained independently with the same retention rate.}
+  tree, giving the retention rate at each event.}
   \item{geomMean}{the mean of the prior geometric distribution for the
   number of genes at the root.}
   \item{dirac}{value for the number of genes at the root, if
   fixed to the same value for all families.}
-  \item{conditioning}{type of filtering. No filterning implemented yet.} 
+  \item{conditioning}{type of filtering. No filtering implemented yet.} 
 }
 
 \value{
@@ -36,9 +35,10 @@ rgenecount(nfam, tre, lambdamu, retention, geomMean=NULL, dirac=NULL,
 }
 
 \details{
-  For the simmap format, see \code{\link{MLEGeneCount}}
+  For the simmap format, see \code{\link{MLEGeneCount}}.
   For WGT events, the 2 extra copies are assumed to be retained
-  independently. With retention rate \eqn{q}, the probability to retain
+  independently with the same retention rate.
+  With retention rate \eqn{q}, the probability to retain
   all 3 gene copies is then \eqn{q^2}, the probability to retain 2 gene
   copies is \eqn{2*q*(1-q)}, and the probability to retain the original
   gene only is \eqn{(1-q)^2}.
