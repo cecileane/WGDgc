@@ -96,7 +96,7 @@ getLikGeneCount <- function (para, input, geneCountData, mMax=NULL,
     if (isTRUE(all.equal(c(doomL,doomR),c(1,1))))
       stop("Doom probabilities are 1, cannot condition on non-extinct family in both clades.
   BD rates:",cat(exp(logLamlogMu)))
-    loglik.all = sum(loglik) - nFamily * log( (1-doomL)*(1-doomR) )
+    loglik.all = sum(loglik) - nFamily * log(1-doomL-doomR+doom)
     # fixit: if (useRootStateMLE), doomL and doomR vary across families:
     #        depend on estimated # lineages surviving at root. See above.
   } else if (conditioning=="twoOrMore"){
