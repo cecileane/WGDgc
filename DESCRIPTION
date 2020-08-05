@@ -1,6 +1,6 @@
 Package: WGDgc
-Version: 1.2
-Date: 2015-10-22
+Version: 1.3
+Date: 2020-08-04
 Title: Whole genome duplication detection using gene counts
 Authors@R: c(person("Tram", "Ta", role=c("aut"), email="tramta@stat.wisc.edu"),
 	     person("Charles-Elie Rabier", "Rabier", role="aut"),
